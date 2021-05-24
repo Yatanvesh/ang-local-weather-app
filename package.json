@@ -8,7 +8,9 @@
     "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prevercel:publish": "npm run build:prod",
+    "vercel:publish":"vercel --platform-version 2 dist/local-weather-app"
   },
   "private": true,
   "dependencies": {

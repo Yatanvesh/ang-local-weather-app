@@ -8,7 +8,7 @@ import {map} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class WeatherService implements IWeatherService{
+export class WeatherService implements IWeatherService {
 
   constructor(private httpClient: HttpClient) {
   }
@@ -58,5 +58,5 @@ interface ICurrentWeatherData {
 }
 
 export interface IWeatherService {
-  getCurrentWeather(city: string, country: string): Observable<ICurrentWeather>
+  getCurrentWeather(city: string, country: string): Observable<ICurrentWeather>;
 }
